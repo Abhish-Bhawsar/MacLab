@@ -1,0 +1,132 @@
+//
+//  ViewController.swift
+//  AbhishApp2
+//
+//  Created by Student on 29/08/19.
+//  Copyright © 2019 Student. All rights reserved.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+
+    @IBOutlet var str1: UITextField!
+    
+    @IBOutlet var str2: UITextField!
+    
+    @IBOutlet var result: UILabel!
+    
+    @IBAction func concate(_ sender: Any) {
+        var s1:String=str1.text!
+        var s2:String=str2.text!
+        
+        result.text=s1+s2
+        
+    }
+    
+    @IBAction func numOfVow(_ sender: Any) {
+        var s1:String=str1.text!
+        var s2:String=str2.text!
+        
+        var res:String=s1+s2
+        
+        var charr:[Character] = ["a","e","i","o","u"]
+        var count:Int=0
+        for ch in res.lowercased().characters
+        {
+                if(charr.contains(ch))
+                {
+                    count=count+1
+                }
+        }
+        
+        result.text=String(count)
+    }
+    
+    @IBAction func lengthofStr(_ sender: Any) {
+        var s1:String=str1.text!
+        var s2:String=str2.text!
+        
+        var res:String=s1+s2
+        
+        result.text=String(res.count)
+    }
+}
+
+//
+//  ViewController.swift
+//  AbhishApp2
+//
+//  Created by Student on 29/08/19.
+//  Copyright © 2019 Student. All rights reserved.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+
+    @IBOutlet var str1: UITextField!
+    
+    @IBOutlet var str2: UITextField!
+    
+    @IBOutlet var result: UILabel!
+    
+    @IBAction func concate(_ sender: Any) {
+        var s1:String=str1.text!
+        var s2:String=str2.text!
+        
+        result.text=s1+s2
+        
+    }
+    
+    @IBAction func numOfVow(_ sender: Any) {
+        var s1:String=str1.text!
+        var s2:String=str2.text!
+        
+        var res:String=s1+s2
+        
+        var charr:[Character] = ["a","e","i","o","u"]
+        var count:Int=0
+        for ch in res.lowercased().characters
+        {
+                if(charr.contains(ch))
+                {
+                    count=count+1
+                }
+        }
+        
+        result.text=String(count)
+    }
+    
+    @IBAction func lengthofStr(_ sender: Any) {
+        var s1:String=str1.text!
+        var s2:String=str2.text!
+        
+        var res:String=s1+s2
+        
+        result.text=String(res.count)
+    }
+}
+
